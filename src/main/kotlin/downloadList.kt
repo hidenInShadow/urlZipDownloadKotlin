@@ -13,7 +13,7 @@ fun downloadList(listOfUrl: ArrayList<String>) {
             println(data)
         }
         myReader.close()
-        zipDownloader(listOfUrl)
+        downloadZip(listOfUrl)
     } catch (e: IOException) {
         println("An error occurred")
         e.printStackTrace()

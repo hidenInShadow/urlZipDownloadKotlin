@@ -4,7 +4,7 @@ import java.io.FileOutputStream
 import java.io.IOException
 import java.net.URL
 
-fun zipDownloader(listOfUrl: ArrayList<String>) {
+fun downloadZip(listOfUrl: ArrayList<String>) {
         for (element in listOfUrl) {
             val pathname =
                 "./" + element.substring(element.lastIndexOf("/")) // I know, this solution with path is sordid, but i can't find better solution
